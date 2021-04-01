@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$bg: #fff;
+
+@mixin flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: $bg;
+  overflow-x: hidden;
+}
