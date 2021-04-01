@@ -1,0 +1,23 @@
+<aside class="aside-One" [ngClass]="{ active: is_aside_active }">
+  <div class="cross">
+    <div (click)="hide()">cross</div>
+  </div>
+
+  <nav>
+    <ul class="ul">
+      <li class="nav-links">
+        <a class="link">Home</a>
+      </li>
+      <li class="nav-links">
+        <a class="link">Aside1</a>
+      </li>
+      <li class="nav-links">
+        <a class="link">Aside2</a>
+      </li>
+      <li class="nav-links">
+        <a class="link">Aside3</a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<div class="dimmer" [ngClass]="{ active: is_aside_active }"></div>

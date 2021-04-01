@@ -1,1 +1,17 @@
-<p>header1-aside works!</p>
+<header class="header-One">
+  <!-- Mobile Menu -->
+  <div class="left-nav">
+    <div class="logo">
+      <img src="./assets/Images/logo.png" alt="" />
+    </div>
+  </div>
+  <div class="right-nav" *ngIf="!active">
+    <div class="hamburgar" (click)="show_Aside()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</header>
+
+<app-aside1 #aside></app-aside1>
